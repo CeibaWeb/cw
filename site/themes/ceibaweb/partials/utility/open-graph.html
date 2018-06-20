@@ -1,7 +1,12 @@
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="{{ if url === homepage }}{{ site_name }}{{ else }}{{ title }}{{ /if }}">
 <meta property="og:url" content="{{ url }}">
+{{ if splash_image.0 }}
+<meta property="og:image" content="{{ path :src='splash_image.0' absolute='true'}}">
+{{ else }}
 <meta property="og:image" content="{{ path :src='splash_image' absolute='true'}}">
+{{ /if }}
+{{#  #}}
 <meta property="business:contact_data:locality" content="Santa Ana">
 <meta property="business:contact_data:region" content="CA">
 <meta property="business:contact_data:postal_code" content="92705">
@@ -10,4 +15,8 @@
 <meta name="twitter:site" content="@ceibaweb">
 <meta name="twitter:title" content="{{ if url === homepage }}{{ site_name }}{{ else }}{{ title }}{{ /if }}">
 <meta name="twitter:description" content="{{ description }}">
+{{ if splash_image.0 }}
+<meta name="twitter:image" content="{{ path :src='splash_image.0' absolute='true'}}">
+{{ else }}
 <meta name="twitter:image" content="{{ path :src='splash_image' absolute='true'}}">
+{{ /if }}
