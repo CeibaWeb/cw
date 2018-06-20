@@ -10,8 +10,8 @@ sections:
         instructions: The name of your website
         localizable: true
       splash_image:
-        container: img
-        folder: /
+        container: main
+        folder: img
         restrict: false
         type: assets
         display: Splash Image
