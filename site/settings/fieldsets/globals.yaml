@@ -10,7 +10,7 @@ sections:
         instructions: The name of your website
         localizable: true
       splash_image:
-        container: flags
+        container: img
         folder: /
         restrict: false
         type: assets
