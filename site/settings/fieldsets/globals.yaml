@@ -15,6 +15,11 @@ sections:
         restrict: false
         type: assets
         display: Splash Image
+      description:
+        type: textarea
+        display: SEO Description
+        validate: between:50,300
+        lines: 3
       homepage_features:
         mode: table
         fields:
